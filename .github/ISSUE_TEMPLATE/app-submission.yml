@@ -1,0 +1,47 @@
+name: 🔍 App Submission
+description: Suggest an app to be reviewed and listed on KH Tools.
+title: "[App Submission] "
+labels: ["app-submission"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an app! Just provide the basics below — we'll take care of researching and reviewing it.
+
+  - type: input
+    id: app-name
+    attributes:
+      label: App name
+      placeholder: Type the app name
+    validations:
+      required: true
+
+  - type: input
+    id: app-link
+    attributes:
+      label: Link
+      description: Website, app store link, or GitHub repository.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this app best fit?
+      options:
+        - Audio & Video
+        - Field Service
+        - Reports & Administration
+        - Territory Management
+        - Other / Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes (optional)
+      description: Anything else you'd like us to know about this app.

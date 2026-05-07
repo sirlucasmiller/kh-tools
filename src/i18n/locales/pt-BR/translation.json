@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "languageName": "Português (Brasil)"
+  },
+  "header": {
+    "home": "Início",
+    "about": "Sobre",
+    "submitApp": "Enviar um app"
+  },
+  "language": {
+    "select": "Escolher idioma"
+  },
+  "home": {
+    "title": "Apps para Congregações",
+    "subtitle": "Aplicativos independentes criados por Testemunhas de Jeová para apoiar atividades congregacionais, reunidos em um só lugar.",
+    "note": "Cada categoria mostra o que está disponível e como as opções se comparam. A escolha do que serve melhor para sua congregação é de vocês.",
+    "categoriesTitle": "Categorias",
+    "noCategoriesYet": "Ainda não há categorias com apps avaliados. Estamos trabalhando nisso!",
+    "appsReviewed_one": "{{count}} app avaliado",
+    "appsReviewed_other": "{{count}} apps avaliados",
+    "exploreCategory": "Ver comparação"
+  },
+  "category": {
+    "backToHome": "Voltar ao início",
+    "comparisonTitle": "Comparação",
+    "comparisonSubtitle": "Visão lado a lado de cada app nesta categoria.",
+    "verdictTitle": "Veredito",
+    "privacyTitle": "Privacidade e Confiança",
+    "featuresTitle": "Recursos",
+    "prosAndCons": "Prós e Contras",
+    "pros": "Prós",
+    "cons": "Contras",
+    "noAppsYet": "Nenhum app foi avaliado nesta categoria ainda.",
+    "noAppsYetDescription": "Conhece um app que deveria aparecer aqui? Abra uma issue no GitHub e nós vamos avaliá-lo.",
+    "openIssue": "Sugerir um app",
+    "platforms": "Plataformas",
+    "developer": "Desenvolvedor",
+    "website": "Site",
+    "repository": "Código-fonte",
+    "pricing": "Preço",
+    "lastReviewed": "Última avaliação",
+    "visitWebsite": "Acessar site",
+    "viewSource": "Ver código",
+    "verdictSummary": "Nossa recomendação",
+    "verdictTie": "Empate contextual",
+    "evidenceTitle": "Detalhes da análise",
+    "evidenceSubtitle": "Notas verificadas nas páginas oficiais, políticas e lojas de apps.",
+    "sources": "Fontes"
+  },
+  "about": {
+    "title": "Sobre este projeto",
+    "whatIsThis": "O que é o KH Tools?",
+    "whatIsThisContent": "KH Tools é um diretório open-source, mantido por voluntários, que reúne aplicativos independentes criados por irmãos Testemunhas de Jeová para apoiar várias atividades congregacionais — como gerenciamento de áudio e vídeo, acompanhamento do serviço de campo, organização de territórios e muito mais.\n\nAo longo dos anos, muitos irmãos e irmãs desenvolveram ferramentas úteis por iniciativa própria. O desafio é que esses apps ficam espalhados pela internet, e pode ser difícil saber quais existem ou como eles se comparam. Este projeto reúne tudo em um só lugar, com informações práticas para ajudar você a fazer uma escolha bem informada.",
+    "whyTitle": "Por que isso existe?",
+    "whyContent": "Não existe um único lugar onde seja possível encontrar e comparar todos os aplicativos independentes criados para uso congregacional. Se você já pesquisou por \"um app para gerenciar mídia das reuniões\" ou \"uma ferramenta para gerenciar territórios\", provavelmente encontrou informações fragmentadas em fóruns, redes sociais e recomendações informais.\n\nEste diretório resolve isso organizando tudo em um só lugar, com comparações claras, detalhes de recursos e observações sobre privacidade para cada app.",
+    "howItWorks": "Como funciona?",
+    "howItWorksContent": "Cada categoria (por exemplo, Áudio e Vídeo, Serviço de Campo) lista os aplicativos independentes que encontramos e avaliamos. Para cada app, mostramos:\n\n• Uma breve descrição do que ele faz\n• Quais plataformas ele suporta\n• Uma tabela de comparação de recursos\n• Informações de privacidade e confiança\n• Prós e contras\n• Uma sugestão de escolha (\"Veredito\")\n\nO veredito é nossa leitura honesta com base nas informações disponíveis — mas cada congregação é diferente, e a decisão final é sempre de vocês.",
+    "submitTitle": "Quer sugerir um app?",
+    "submitContent": "Se você conhece um app que ainda não está listado aqui, abra uma issue no GitHub. Basta informar o nome do app e um link — nós cuidamos da pesquisa e da avaliação.",
+    "disclaimerTitle": "Aviso",
+    "disclaimerContent": "Este projeto não é afiliado, endossado nem conectado à Watch Tower Bible and Tract Society of Pennsylvania ou a qualquer uma de suas entidades relacionadas. Todos os apps listados aqui são desenvolvidos de forma independente por publicadores das Testemunhas de Jeová. O uso ou a confiança em qualquer um desses aplicativos fica inteiramente a critério do usuário."
+  },
+  "pricing": {
+    "free": "Grátis",
+    "freemium": "Freemium",
+    "paid": "Pago",
+    "donation": "Baseado em donativos"
+  },
+  "platforms": {
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "ios": "iOS",
+    "web": "Web"
+  },
+  "privacy": {
+    "dataCollection": "Coleta de dados",
+    "openSource": "Código aberto",
+    "offlineCapable": "Funciona offline",
+    "none": "Nenhuma",
+    "minimal": "Mínima",
+    "moderate": "Moderada",
+    "extensive": "Extensa",
+    "yes": "Sim",
+    "no": "Não"
+  },
+  "categoryNames": {
+    "audio-video": "Áudio e Vídeo",
+    "field-service": "Serviço de Campo",
+    "meeting-scheduling": "Agenda e Designações",
+    "reports": "Relatórios e Administração",
+    "territory": "Gerenciamento de Territórios"
+  },
+  "categoryFeatures": {
+    "meeting-scheduling": {
+      "midweekSchedule": "Agenda da reunião Vida e Ministério",
+      "weekendSchedule": "Agenda da reunião do fim de semana",
+      "studentAssignments": "Designações de estudantes",
+      "autoAssignMeetingParts": "Auto-Assign para partes da reunião",
+      "assignmentNotifications": "Notificações para designados",
+      "publicTalks": "Discursos públicos locais e fora",
+      "fieldServiceSchedules": "Agenda de serviço de campo",
+      "publicWitnessing": "Testemunho público/carrinhos",
+      "dutiesCleaning": "Deveres, limpeza e manutenção",
+      "territories": "Territórios e mapas",
+      "reportsExports": "Relatórios e exportações",
+      "importFromOtherApps": "Importação de outros sistemas"
+    }
+  },
+  "verdicts": {
+    "meeting-scheduling": {
+      "summary": "Empate contextual: Hourglass é a opção mais acessível para uma congregação que quer começar rápido, com uso via navegador, apps móveis, notificações e custo baseado em donativos. NW Scheduler é a escolha mais prudente quando a prioridade é manter o núcleo administrativo em desktop/local, com menor dependência de nuvem e compartilhamento documentado com criptografia ponta a ponta. Como os dois cobrem bem agenda e designações, a decisão depende principalmente do peso dado a conveniência colaborativa versus controle local dos dados."
+    }
+  },
+  "apps": {
+    "nw-scheduler": {
+      "description": "Programa desktop para Windows e macOS, com app companion NW Publisher para publicadores. Cobre Vida e Ministério, discursos públicos, serviço de campo, carrinhos, deveres, territórios, secretaria e outros fluxos congregacionais.",
+      "details": [
+        "O núcleo administrativo é um programa instalado localmente em Windows ou macOS; o app NW Publisher para iOS, Android e Amazon é complementar e depende da congregação usar NW Scheduler.",
+        "A agenda da reunião Vida e Ministério inclui classes principal e auxiliar, Auto-Assign, estudante recomendado e histórico detalhado das partes.",
+        "O escopo vai além de reuniões: secretaria, registros de publicadores, relatórios mensais, discursos públicos, grupos de serviço, carrinhos, territórios, limpeza, deveres, manutenção, visita do superintendente de circuito, quadro de informações, literatura e tarefas.",
+        "O compartilhamento congregacional é opcional, desativado por padrão, e usa OAuth 2.0, TLS 1.2 e criptografia ponta a ponta com AES-256; as chaves ficam no dispositivo local segundo a documentação do fornecedor.",
+        "A documentação informa que, por padrão, os dados ficam apenas no computador local e que desenvolvedores, administradores e suporte não conseguem ver ou editar dados da congregação.",
+        "A página de registro informa teste gratuito de 60 dias e licenças anuais, incluindo Individual por US$ 12, Congregation Silver por US$ 29 e Congregation Gold por US$ 39 na data desta análise.",
+        "O fornecedor declara que o programa não é oficial nem endossado pela organização, e que cada congregação deve fazer sua própria escolha."
+      ],
+      "pros": [
+        "Modelo desktop/local favorece controle direto dos dados pela congregação.",
+        "Conjunto muito amplo de módulos em um só programa.",
+        "Recursos fortes de agenda: Auto-Assign, histórico de partes e múltiplas áreas congregacionais.",
+        "Documentação extensa sobre criptografia, compartilhamento e retenção de dados.",
+        "NW Publisher amplia o alcance para publicadores em iOS e Android."
+      ],
+      "cons": [
+        "Não é uma solução web: o trabalho administrativo principal depende de instalação desktop.",
+        "Licença anual paga após o período de teste.",
+        "Fluxo mais pesado para congregações que querem colaboração imediata via navegador.",
+        "Código-fonte não é aberto."
+      ],
+      "sources": [
+        {
+          "label": "Página oficial do NW Scheduler"
+        },
+        {
+          "label": "Registro e preços"
+        },
+        {
+          "label": "Segurança e privacidade"
+        },
+        {
+          "label": "NW Publisher App"
+        },
+        {
+          "label": "Comparação publicada pelo fornecedor"
+        }
+      ]
+    },
+    "hourglass": {
+      "description": "Aplicação web para congregações com apps móveis para publicadores. Organiza publicadores, grupos, contatos, presença, territórios, agendas, designações, relatórios e notificações.",
+      "details": [
+        "O uso administrativo acontece pelo serviço web app.hourglass-app.com, com apps para iOS e Android; o app móvel exige convite da congregação para o primeiro acesso.",
+        "A página oficial lista organização de publicadores, grupos, contatos de emergência, presença às reuniões e territórios, além de agendas de limpeza, serviço de campo, testemunho público, reuniões do meio e fim de semana, áudio/vídeo, indicadores e grupos de idioma.",
+        "As designações podem notificar os designados imediatamente, com opção de aceitar ou recusar, e publicadores podem enviar relatórios de campo pelo celular.",
+        "Hourglass declara importar dados de KHS, NW Scheduler ou TSWIN e exportar dados da congregação em PDF, DOCX, CSV ou JSON.",
+        "A segurança documentada inclui criptografia em trânsito e em repouso, hospedagem redundante dedicada ao Hourglass e criptografia ponta a ponta opcional para dados pessoais.",
+        "A política de privacidade informa uso de AWS, e-mail para usuários registrados, dados inseridos por representantes da congregação e ausência de processamento de pagamentos pelo próprio Hourglass.",
+        "O FAQ orienta consultar as instruções da filial local para garantir que o uso do Hourglass esteja em conformidade com as orientações aplicáveis.",
+        "O módulo SMPW separado cobre zonas, locais, publicadores, agendamento manual/automático/open-scheduling, Auto-Fill e comunicações por e-mail, SMS, WhatsApp e Signal; isso não foi tratado aqui como Auto-Assign geral para partes da reunião.",
+        "O FAQ informa que não há pagamento obrigatório; o serviço é mantido por donativos voluntários."
+      ],
+      "pros": [
+        "Funciona pelo navegador e reduz dependência de instalação desktop.",
+        "Custo sem pagamento obrigatório, sustentado por donativos.",
+        "Apps móveis oficiais nas lojas, com convite da congregação e notificações.",
+        "Boa cobertura de agendas, relatórios, territórios e designações em uma interface centralizada.",
+        "Importa dados de NW Scheduler, KHS e TSWIN e exporta em formatos úteis."
+      ],
+      "cons": [
+        "Modelo web/cloud exige avaliação cuidadosa das orientações locais de proteção de dados.",
+        "Criptografia ponta a ponta é descrita como recurso opcional, não como padrão obrigatório para todos os dados.",
+        "Depende do serviço online para o uso principal.",
+        "Código-fonte não é aberto."
+      ],
+      "sources": [
+        {
+          "label": "Site oficial do Hourglass"
+        },
+        {
+          "label": "Recursos"
+        },
+        {
+          "label": "Segurança"
+        },
+        {
+          "label": "Perguntas e respostas"
+        },
+        {
+          "label": "Política de privacidade"
+        },
+        {
+          "label": "Google Play"
+        },
+        {
+          "label": "App Store"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "openSource": "Projeto open-source mantido por voluntários.",
+    "github": "GitHub",
+    "license": "Licença MIT"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você está procurando não existe.",
+    "backHome": "Voltar ao início"
+  }
+}

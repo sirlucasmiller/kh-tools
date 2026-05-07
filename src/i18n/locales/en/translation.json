@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "languageName": "English"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "submitApp": "Submit an App"
+  },
+  "language": {
+    "select": "Choose language"
+  },
+  "home": {
+    "title": "Congregation Apps",
+    "subtitle": "Independent apps built by Jehovah's Witnesses to support congregation activities, gathered in one place.",
+    "note": "Each category shows what's available and how the options compare. Which one fits your congregation is entirely up to you.",
+    "categoriesTitle": "Categories",
+    "noCategoriesYet": "No categories with reviewed apps yet. We're working on it!",
+    "appsReviewed_one": "{{count}} app reviewed",
+    "appsReviewed_other": "{{count}} apps reviewed",
+    "exploreCategory": "See comparison"
+  },
+  "category": {
+    "backToHome": "Back to home",
+    "comparisonTitle": "Comparison",
+    "comparisonSubtitle": "Side-by-side overview of each app in this category.",
+    "verdictTitle": "Verdict",
+    "privacyTitle": "Privacy & Trust",
+    "featuresTitle": "Features",
+    "prosAndCons": "Pros & Cons",
+    "pros": "Pros",
+    "cons": "Cons",
+    "noAppsYet": "No apps have been reviewed in this category yet.",
+    "noAppsYetDescription": "Know an app that belongs here? Open an issue on GitHub and we'll evaluate it.",
+    "openIssue": "Suggest an app",
+    "platforms": "Platforms",
+    "developer": "Developer",
+    "website": "Website",
+    "repository": "Source code",
+    "pricing": "Pricing",
+    "lastReviewed": "Last reviewed",
+    "visitWebsite": "Visit website",
+    "viewSource": "View source",
+    "verdictSummary": "Our recommendation",
+    "verdictTie": "Context-dependent tie",
+    "evidenceTitle": "Review Details",
+    "evidenceSubtitle": "Notes verified against official pages, policies, and app stores.",
+    "sources": "Sources"
+  },
+  "about": {
+    "title": "About this project",
+    "whatIsThis": "What is KH Tools?",
+    "whatIsThisContent": "KH Tools is a volunteer-maintained, open-source directory that gathers independent apps created by fellow Jehovah's Witnesses to support various congregation activities — things like audio and video management, field service tracking, territory organization, and more.\n\nOver the years, many brothers and sisters have developed helpful tools on their own initiative. The challenge is that these apps are scattered across the internet, and it can be hard to know which ones exist or how they compare. This project brings them together in one place with practical information to help you make an informed choice.",
+    "whyTitle": "Why does this exist?",
+    "whyContent": "There is no single place where you can find and compare all the independent apps built for congregation use. If you've ever searched for \"an app to manage meeting media\" or \"a territory management tool,\" you've probably found fragmented information across forums, social media, and word of mouth.\n\nThis directory solves that by organizing everything in one spot, with clear comparisons, feature breakdowns, and privacy notes for each app.",
+    "howItWorks": "How does it work?",
+    "howItWorksContent": "Each category (e.g. Audio & Video, Field Service) lists all the independent apps we've found and reviewed. For each app, we provide:\n\n• A brief description of what it does\n• Which platforms it supports\n• A feature comparison table\n• Privacy and trust information\n• Pros and cons\n• A suggested pick (\"Verdict\")\n\nThe verdict is our honest read based on the available information — but every congregation is different, and the final call is always yours.",
+    "submitTitle": "Want to suggest an app?",
+    "submitContent": "If you know of an app that isn't listed here, please open an issue on GitHub. Simply provide the app name and a link — we'll take care of researching and reviewing it.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerContent": "This project is not affiliated with, endorsed by, or connected to the Watch Tower Bible and Tract Society of Pennsylvania or any of its related entities. All apps listed here are independently developed by publishers who are Jehovah’s Witnesses. Any decision to use or rely on these apps is entirely at the user’s discretion."
+  },
+  "pricing": {
+    "free": "Free",
+    "freemium": "Freemium",
+    "paid": "Paid",
+    "donation": "Donation-based"
+  },
+  "platforms": {
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "ios": "iOS",
+    "web": "Web"
+  },
+  "privacy": {
+    "dataCollection": "Data collection",
+    "openSource": "Open source",
+    "offlineCapable": "Works offline",
+    "none": "None",
+    "minimal": "Minimal",
+    "moderate": "Moderate",
+    "extensive": "Extensive",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "categoryNames": {
+    "audio-video": "Audio & Video",
+    "field-service": "Field Service",
+    "meeting-scheduling": "Scheduling & Assignments",
+    "reports": "Reports & Administration",
+    "territory": "Territory Management"
+  },
+  "categoryFeatures": {
+    "meeting-scheduling": {
+      "midweekSchedule": "Life and Ministry meeting schedule",
+      "weekendSchedule": "Weekend meeting schedule",
+      "studentAssignments": "Student assignments",
+      "autoAssignMeetingParts": "Auto-Assign for meeting parts",
+      "assignmentNotifications": "Assignment notifications",
+      "publicTalks": "Local and away public talks",
+      "fieldServiceSchedules": "Field service schedules",
+      "publicWitnessing": "Public witnessing/carts",
+      "dutiesCleaning": "Duties, cleaning, and maintenance",
+      "territories": "Territories and maps",
+      "reportsExports": "Reports and exports",
+      "importFromOtherApps": "Import from other systems"
+    }
+  },
+  "verdicts": {
+    "meeting-scheduling": {
+      "summary": "Context-dependent tie: Hourglass is the more accessible option for a congregation that wants to get started quickly, with browser-based use, mobile apps, notifications, and donation-based cost. NW Scheduler is the more cautious choice when the priority is keeping the administrative core desktop/local, with less cloud dependency and documented end-to-end encrypted sharing. Since both cover scheduling and assignments well, the decision mainly depends on how much weight you give to collaborative convenience versus local data control."
+    }
+  },
+  "apps": {
+    "nw-scheduler": {
+      "description": "Desktop software for Windows and macOS, with the NW Publisher companion app for publishers. It covers Life and Ministry, public talks, field service, carts, duties, territories, secretary workflows, and other congregation workflows.",
+      "details": [
+        "The administrative core is installed locally on Windows or macOS; the NW Publisher app for iOS, Android, and Amazon is complementary and depends on the congregation using NW Scheduler.",
+        "The Life and Ministry meeting scheduler includes main and auxiliary classes, Auto-Assign, recommended students, and detailed part history.",
+        "Its scope goes beyond meetings: secretary records, publisher records, monthly reports, public talks, service groups, carts, territories, cleaning, duties, maintenance, circuit overseer visits, information board, literature, and tasks.",
+        "Congregation Sharing is optional, disabled by default, and uses OAuth 2.0, TLS 1.2, and end-to-end encryption with AES-256; according to the vendor documentation, keys stay on the local device.",
+        "The documentation says that, by default, data stays only on the local computer and that developers, administrators, and support personnel cannot view or edit congregation data.",
+        "The registration page lists a 60-day free trial and annual licenses, including Individual at US$12, Congregation Silver at US$29, and Congregation Gold at US$39 as of this review.",
+        "The vendor states that the program is not official or endorsed by the organization, and that each congregation should make its own choice."
+      ],
+      "pros": [
+        "Desktop/local model favors direct data control by the congregation.",
+        "Very broad set of modules in one program.",
+        "Strong scheduling features: Auto-Assign, part history, and multiple congregation areas.",
+        "Extensive documentation about encryption, sharing, and data retention.",
+        "NW Publisher extends access to publishers on iOS and Android."
+      ],
+      "cons": [
+        "It is not a web solution: the main administrative work depends on desktop installation.",
+        "Paid annual license after the trial period.",
+        "Heavier workflow for congregations that want immediate browser-based collaboration.",
+        "The source code is not open."
+      ],
+      "sources": [
+        {
+          "label": "Official NW Scheduler page"
+        },
+        {
+          "label": "Registration and pricing"
+        },
+        {
+          "label": "Security and privacy"
+        },
+        {
+          "label": "NW Publisher App"
+        },
+        {
+          "label": "Vendor-published comparison"
+        }
+      ]
+    },
+    "hourglass": {
+      "description": "Web application for congregations with mobile apps for publishers. It organizes publishers, groups, contacts, attendance, territories, schedules, assignments, reports, and notifications.",
+      "details": [
+        "Administrative use happens through the web service app.hourglass-app.com, with apps for iOS and Android; first-time mobile app use requires an invitation from the congregation.",
+        "The official page lists organization of publishers, groups, emergency contacts, meeting attendance, and territories, plus schedules for cleaning, field service, public witnessing, midweek and weekend meetings, audio/video, attendants, and language groups.",
+        "Assignments can notify assignees immediately, with the option to accept or decline, and publishers can submit field service reports from their phones.",
+        "Hourglass says it can import data from KHS, NW Scheduler, or TSWIN and export congregation data as PDF, DOCX, CSV, or JSON.",
+        "Documented security includes encryption in transit and at rest, redundant hosting dedicated to Hourglass, and optional end-to-end encryption for personal data.",
+        "The privacy policy states that Hourglass uses AWS, collects email for registered users, stores data entered by congregation representatives, and does not process payments inside Hourglass itself.",
+        "The FAQ says to consult direction provided by the local branch office to ensure Hourglass use is compliant with applicable guidance.",
+        "The separate SMPW module covers zones, locations, publishers, manual/automatic/open scheduling, Auto-Fill, and communications by email, SMS, WhatsApp, and Signal; this was not counted here as general Auto-Assign for meeting parts.",
+        "The FAQ states that no payment is required and that the service is supported by voluntary donations."
+      ],
+      "pros": [
+        "Works in the browser and reduces dependency on desktop installation.",
+        "No required payment, supported by donations.",
+        "Official mobile apps in app stores, with congregation invitation and notifications.",
+        "Good coverage of schedules, reports, territories, and assignments in one centralized interface.",
+        "Imports from NW Scheduler, KHS, and TSWIN and exports to useful formats."
+      ],
+      "cons": [
+        "The web/cloud model requires careful evaluation of local data-protection direction.",
+        "End-to-end encryption is described as optional, not mandatory for all data by default.",
+        "Depends on the online service for primary use.",
+        "The source code is not open."
+      ],
+      "sources": [
+        {
+          "label": "Official Hourglass site"
+        },
+        {
+          "label": "Features"
+        },
+        {
+          "label": "Security"
+        },
+        {
+          "label": "Questions and Answers"
+        },
+        {
+          "label": "Privacy policy"
+        },
+        {
+          "label": "Google Play"
+        },
+        {
+          "label": "App Store"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "openSource": "Open-source project maintained by volunteers.",
+    "github": "GitHub",
+    "license": "MIT License"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist.",
+    "backHome": "Go back home"
+  }
+}
