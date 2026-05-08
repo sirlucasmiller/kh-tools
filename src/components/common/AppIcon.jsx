@@ -29,9 +29,24 @@ function getPalette(seed) {
   return iconPalettes[index]
 }
 
+function resolvePublicAsset(src) {
+  if (!src || /^[a-z][a-z\d+.-]*:/i.test(src) || src.startsWith('//')) {
+    return src
+  }
+
+  if (!src.startsWith('/')) {
+    return src
+  }
+
+  const basePath = import.meta.env.BASE_URL
+
+  return `${basePath}${src.slice(1)}`
+}
+
 export default function AppIcon({ className = '', name, src, size }) {
-  const [hasImageError, setHasImageError] = useState(false)
+  const [failedSrc, setFailedSrc] = useState(null)
   const label = name ?? ''
+  const resolvedSrc = resolvePublicAsset(src)
   const [startColor, endColor] = getPalette(label)
   const style = size
     ? {
@@ -44,16 +59,16 @@ export default function AppIcon({ className = '', name, src, size }) {
         '--app-icon-end': endColor,
       }
 
-  if (src && !hasImageError) {
+  if (resolvedSrc && failedSrc !== resolvedSrc) {
     return (
       <img
-        src={src}
+        src={resolvedSrc}
         alt=""
         className={`app-icon ${className}`}
         loading="lazy"
         width={size}
         height={size}
-        onError={() => setHasImageError(true)}
+        onError={() => setFailedSrc(resolvedSrc)}
       />
     )
   }
