@@ -106,6 +106,7 @@ export const apps = [
   {
     id: 'hourglass',
     name: 'Hourglass',
+    iconSrc: '/app-icons/hourglass.jpg',
     developer: 'Congregation Software Foundation',
     website: 'https://www.hourglass-app.com',
     repository: null,

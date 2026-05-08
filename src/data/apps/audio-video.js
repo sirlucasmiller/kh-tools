@@ -37,6 +37,7 @@ export const apps = [
   {
     id: 'solin',
     name: 'Solin',
+    iconSrc: '/app-icons/solin.png',
     developer: 'Desenvolvedor independente',
     website: 'https://solinav.vercel.app/',
     repository: null,
@@ -133,6 +134,7 @@ export const apps = [
   {
     id: 'meeting-media-manager',
     name: 'Meeting Media Manager (M3)',
+    iconSrc: '/app-icons/m3.svg',
     developer: 'Olivier Savignac e comunidade open-source',
     website: 'https://sircharlo.github.io/meeting-media-manager/',
     repository: 'https://github.com/sircharlo/meeting-media-manager',

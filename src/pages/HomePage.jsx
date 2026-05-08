@@ -1,5 +1,6 @@
 import Hero from '../components/home/Hero'
 import CategoryGrid from '../components/home/CategoryGrid'
+import AppDirectory from '../components/home/AppDirectory'
 import Seo from '../components/common/Seo'
 import { useTranslation } from 'react-i18next'
 
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Seo title={t('seo.home.title')} description={t('seo.home.description')} />
       <Hero />
       <CategoryGrid />
+      <AppDirectory />
     </div>
   )
 }

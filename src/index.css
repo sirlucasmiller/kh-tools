@@ -123,6 +123,31 @@ button {
   cursor: pointer;
 }
 
+.app-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--app-icon-size, 44px);
+  height: var(--app-icon-size, 44px);
+  flex-shrink: 0;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background-color: var(--color-surface);
+}
+
+.app-icon--fallback {
+  overflow: hidden;
+  color: #ffffff;
+  font-size: calc(var(--app-icon-size, 44px) * 0.32);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  background:
+    radial-gradient(circle at 16% 12%, rgba(255, 255, 255, 0.28) 0 28%, transparent 29%),
+    radial-gradient(circle at 86% 84%, rgba(255, 255, 255, 0.24) 0 30%, transparent 31%),
+    linear-gradient(135deg, var(--app-icon-start), var(--app-icon-end));
+}
+
 /* =========================================== */
 /* Layout                                      */
 /* =========================================== */
@@ -397,6 +422,139 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+/* =========================================== */
+/* App Directory                               */
+/* =========================================== */
+
+.app-directory {
+  padding-top: var(--space-2);
+}
+
+.app-directory__header {
+  max-width: 680px;
+  margin-bottom: var(--space-6);
+}
+
+.app-directory__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.01em;
+}
+
+.app-directory__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.app-directory__list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.directory-app {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: var(--space-4);
+  align-items: start;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+}
+
+.directory-app__icon {
+  width: 52px;
+  height: 52px;
+  --app-icon-size: 52px;
+}
+
+.directory-app__content {
+  min-width: 0;
+}
+
+.directory-app__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.directory-app__name {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.directory-app__status {
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+}
+
+.directory-app__status--ready {
+  color: var(--color-success);
+  background-color: var(--color-success-bg);
+}
+
+.directory-app__status--pending {
+  color: var(--color-warning);
+  background-color: var(--color-warning-bg);
+}
+
+.directory-app__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-4);
+}
+
+.directory-app__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.directory-app__platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.directory-app__platform {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.directory-app__link {
+  flex-shrink: 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.directory-app__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+.directory-app__link--primary {
+  color: var(--color-accent);
 }
 
 /* =========================================== */
@@ -580,6 +738,19 @@ button {
 
 .app-card:hover {
   box-shadow: var(--shadow-md);
+}
+
+.app-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.app-card__icon {
+  width: 44px;
+  height: 44px;
+  --app-icon-size: 44px;
 }
 
 .app-card__name {
@@ -1053,6 +1224,28 @@ button {
 
   .category-grid {
     grid-template-columns: 1fr;
+  }
+
+  .directory-app {
+    grid-template-columns: 44px 1fr;
+    padding: var(--space-4);
+  }
+
+  .directory-app__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .directory-app__heading,
+  .directory-app__footer,
+  .directory-app__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .directory-app__status,
+  .directory-app__link {
+    white-space: normal;
   }
 
   .app-cards {

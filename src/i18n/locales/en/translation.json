@@ -32,7 +32,15 @@
     "noCategoriesYet": "No categories with reviewed apps yet. We're working on it!",
     "appsReviewed_one": "{{count}} app reviewed",
     "appsReviewed_other": "{{count}} apps reviewed",
-    "exploreCategory": "See comparison"
+    "exploreCategory": "See comparison",
+    "appDirectoryTitle": "All apps found",
+    "appDirectorySubtitle": "Not every app has to wait for a full comparison before it appears here. The catalog gathers known apps now, and reviews can be added over time.",
+    "comparisonAvailable": "Comparison available",
+    "comparisonPending": "Awaiting comparison",
+    "viewComparison": "View comparison",
+    "viewComparisonInCategory": "View {{appName}} comparison in {{categoryName}}",
+    "visitAppWebsite": "Official site",
+    "viewAppRepository": "Repository"
   },
   "category": {
     "backToHome": "Back to home",
@@ -330,6 +338,24 @@
           "label": "App Store"
         }
       ]
+    }
+  },
+  "directoryApps": {
+    "khs": {
+      "name": "KHS",
+      "description": "Windows 11 program for creating weekly congregation schedules, including Life and Ministry, public talks, audio/video, attendants, cleaning, service groups, public witnessing, and reports."
+    },
+    "meeting-schedule-assistant": {
+      "name": "Meeting Schedule Assistant",
+      "description": "Windows software for creating Kingdom Hall assignment schedules and reports, with editors for Life and Ministry, assignments, publishers, special events, S-89 slips, and Google/Outlook sync."
+    },
+    "onlym": {
+      "name": "OnlyM",
+      "description": "Windows media player for meetings, supporting images, videos, audio, PDFs, websites, slideshows, an external media monitor, and portable operation."
+    },
+    "onlyt": {
+      "name": "OnlyT",
+      "description": "Windows meeting timer with automatic, manual, and file-based modes, a speaker-facing timer window, timing reports, bell support, web clock, and remote-control API."
     }
   },
   "footer": {

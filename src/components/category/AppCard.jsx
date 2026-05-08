@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import AppIcon from '../common/AppIcon'
 
 export default function AppCard({ app }) {
   const { t } = useTranslation()
@@ -9,10 +10,20 @@ export default function AppCard({ app }) {
       className="app-card"
       id={`app-card-${app.id}`}
     >
-      <h3 className="app-card__name">{app.name}</h3>
-      <p className="app-card__developer">
-        {t('category.developer')}: {app.developer}
-      </p>
+      <div className="app-card__header">
+        <AppIcon
+          name={app.name}
+          src={app.iconSrc}
+          className="app-card__icon"
+          size={44}
+        />
+        <div>
+          <h3 className="app-card__name">{app.name}</h3>
+          <p className="app-card__developer">
+            {t('category.developer')}: {app.developer}
+          </p>
+        </div>
+      </div>
       <p className="app-card__description">{description}</p>
 
       <div className="app-card__platforms">

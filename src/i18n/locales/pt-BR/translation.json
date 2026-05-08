@@ -32,7 +32,15 @@
     "noCategoriesYet": "Ainda não há categorias com apps avaliados. Estamos trabalhando nisso!",
     "appsReviewed_one": "{{count}} app avaliado",
     "appsReviewed_other": "{{count}} apps avaliados",
-    "exploreCategory": "Ver comparação"
+    "exploreCategory": "Ver comparação",
+    "appDirectoryTitle": "Todos os apps encontrados",
+    "appDirectorySubtitle": "Nem todo app precisa esperar uma comparação completa para aparecer aqui. O catálogo reúne os apps conhecidos agora, e as análises podem entrar com o tempo.",
+    "comparisonAvailable": "Comparação disponível",
+    "comparisonPending": "Aguardando comparação",
+    "viewComparison": "Ver comparação",
+    "viewComparisonInCategory": "Ver comparação de {{appName}} em {{categoryName}}",
+    "visitAppWebsite": "Site oficial",
+    "viewAppRepository": "Repositório"
   },
   "category": {
     "backToHome": "Voltar ao início",
@@ -330,6 +338,24 @@
           "label": "App Store"
         }
       ]
+    }
+  },
+  "directoryApps": {
+    "khs": {
+      "name": "KHS",
+      "description": "Programa para Windows 11 que ajuda a criar agendas semanais congregacionais, incluindo Vida e Ministério, discursos públicos, áudio/vídeo, indicadores, limpeza, grupos de serviço, testemunho público e relatórios."
+    },
+    "meeting-schedule-assistant": {
+      "name": "Meeting Schedule Assistant",
+      "description": "Software para Windows que cria escalas e relatórios de designações no Salão do Reino, com editores para Vida e Ministério, designações, publicadores, eventos especiais, slips S-89 e sincronização com Google/Outlook."
+    },
+    "onlym": {
+      "name": "OnlyM",
+      "description": "Reprodutor de mídia para Windows voltado a reuniões, com suporte a imagens, vídeos, áudio, PDFs, websites, slideshows, monitor externo e modo portátil."
+    },
+    "onlyt": {
+      "name": "OnlyT",
+      "description": "Cronômetro de reunião para Windows, com modos automático, manual e por arquivo, janela para o orador, relatórios de tempo, campainha, relógio web e API para controle remoto."
     }
   },
   "footer": {
