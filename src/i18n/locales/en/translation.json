@@ -50,7 +50,7 @@
   "about": {
     "title": "About this project",
     "whatIsThis": "What is KH Tools?",
-    "whatIsThisContent": "KH Tools is a volunteer-maintained, open-source directory that gathers independent apps created by fellow Jehovah's Witnesses to support various congregation activities — things like audio and video management, field service tracking, territory organization, and more.\n\nOver the years, many brothers and sisters have developed helpful tools on their own initiative. The challenge is that these apps are scattered across the internet, and it can be hard to know which ones exist or how they compare. This project brings them together in one place with practical information to help you make an informed choice.",
+    "whatIsThisContent": "KH Tools is a volunteer-maintained, open-source directory that gathers independent apps created by fellow Jehovah's Witnesses to support various congregation activities — things like audio and video management, field service tracking, territory organization, and more.\n\nOver the years, many brothers have developed helpful tools on their own initiative. The challenge is that these apps are scattered across the internet, and it can be hard to know which ones exist or how they compare. This project brings them together in one place with practical information to help you make an informed choice.",
     "whyTitle": "Why does this exist?",
     "whyContent": "There is no single place where you can find and compare all the independent apps built for congregation use. If you've ever searched for \"an app to manage meeting media\" or \"a territory management tool,\" you've probably found fragmented information across forums, social media, and word of mouth.\n\nThis directory solves that by organizing everything in one spot, with clear comparisons, feature breakdowns, and privacy notes for each app.",
     "howItWorks": "How does it work?",
@@ -93,6 +93,27 @@
     "territory": "Territory Management"
   },
   "categoryFeatures": {
+    "audio-video": {
+      "autoWeeklyMedia": "Automatic weekly media download",
+      "songsAndClips": "Songs and music videos",
+      "customPlaylists": "Playlists and custom media",
+      "jwpubPlaylistImport": "JWPUB/JWLPLAYLIST import",
+      "pdfSupport": "PDFs and presentations",
+      "integratedBrowserTabs": "Integrated tabbed browser",
+      "liveBrowserProjection": "Live browser projection",
+      "responsiveWhilePresenting": "App remains responsive while presenting",
+      "preparedPanZoom": "Pan/zoom prepared before projection",
+      "zoomIntegration": "Zoom integration",
+      "zoomAttendance": "Zoom attendance counting",
+      "obsIntegration": "OBS integration",
+      "multiMonitor": "Multi-monitor support",
+      "folderSync": "Synced/watched folders",
+      "wifiTransfer": "Local Wi-Fi/QR transfer",
+      "backgroundMusic": "Automatic background music",
+      "memorialMedia": "Memorial media",
+      "multiProfiles": "Multiple profiles or congregations",
+      "multilingualInterface": "Multilingual interface"
+    },
     "meeting-scheduling": {
       "midweekSchedule": "Life and Ministry meeting schedule",
       "weekendSchedule": "Weekend meeting schedule",
@@ -109,11 +130,98 @@
     }
   },
   "verdicts": {
+    "audio-video": {
+      "summary": "Practical recommendation: Solin has the edge for direct meeting use because it combines a more fluid live workflow, an app that remains responsive during projection, prepared pan/zoom, an integrated tabbed browser, native Zoom integration, attendance counting, a gentler learning curve, and a privacy policy that declares minimal data collection. Meeting Media Manager remains a strong solution, especially because it is open source, supports Linux, has broad documentation, automatic background music, and a longer public history; Solin is also still a recent project, with its first public changelog entry on March 19, 2026. Even so, in this specific audio/video practical-use comparison, Solin appears to be the stronger choice."
+    },
     "meeting-scheduling": {
       "summary": "Context-dependent tie: Hourglass is the more accessible option for a congregation that wants to get started quickly, with browser-based use, mobile apps, notifications, and donation-based cost. NW Scheduler is the more cautious choice when the priority is keeping the administrative core desktop/local, with less cloud dependency and documented end-to-end encrypted sharing. Since both cover scheduling and assignments well, the decision mainly depends on how much weight you give to collaborative convenience versus local data control."
     }
   },
   "apps": {
+    "solin": {
+      "description": "Free desktop application for meeting visual support, with automatic weekly media downloads, second-screen projection, integrated browser, playlists, local Wi-Fi transfer, and Zoom/OBS integrations.",
+      "details": [
+        "The home page presents Solin as an app for songs, videos, images, and projector output, showing version 1.11.0.0 on May 7, 2026.",
+        "The app automatically downloads songs and videos for the current and next week, and the features page says it works offline once media has been downloaded.",
+        "The projector receives videos, images, PDFs, JWPub files, and other media in a clean fullscreen view while controls remain on the main monitor.",
+        "The integrated browser lets the operator navigate inside Solin, project images/videos, or stream a tab live; the changelog records live tab streaming improvements, 16:9 lock, and a new browser engine with modern video support.",
+        "In practical use reviewed here, Solin lets the operator keep using the app during projection, prepare pan/zoom on the main screen, and only then send or reset the projector output.",
+        "Wi-Fi transfer uses a QR code and the local network, with no account, cloud, or cable; the privacy policy says files shared this way stay between devices on the same network.",
+        "Recent changelog entries added native macOS support, multiple profiles, playlist sections/colors, linked folders, Zoom Meetings integration, OBS integration, overlay toolbar, and Memorial calculation/media.",
+        "The About page says the main installers target Windows 10+ and macOS 13+, but there is a legacy installer for Windows 8/8.1; that version is described as an adaptation of the current app, may be slower or unstable, and will not receive support for newer Solin versions.",
+        "The privacy policy says the app collects no personal data, usage statistics, error reports, or telemetry; it makes GET calls for version checks with an anonymous UUID and for global notifications.",
+        "The site says no account or subscription is required; the terms say Solin is free, has no paid features, is provided as-is, and is not affiliated with or endorsed by any official organization.",
+        "The About page says Solin is free and that this will not change; no donation page was identified on the official site during this review.",
+        "In a Windows installation observed during this review, the installed app occupied about 176 MB; this number is contextual and may vary by version, platform, and local cache.",
+        "The app is not open source and the terms prohibit reverse engineering."
+      ],
+      "pros": [
+        "Very flexible projection workflow: the operator can keep navigating the app while something is projected.",
+        "Direct pan/zoom that can be prepared before sending to the projector.",
+        "Integrated tabbed browser with live projection of a specific tab.",
+        "Native Zoom integration, including meeting features and attendance counting documented in the changelog.",
+        "Explicit privacy policy: no personal data, telemetry, or error reports.",
+        "Gentler learning curve for operators who need to adopt the app quickly.",
+        "Observed installation is considerably smaller than M3 on the Windows system reviewed.",
+        "Local QR/Wi-Fi transfer without an account or cloud."
+      ],
+      "cons": [
+        "Closed source, with terms that prohibit reverse engineering.",
+        "No Linux version listed on the official site as of this review.",
+        "Newer project with a shorter public history than M3.",
+        "No documented automatic background music feature equivalent to M3."
+      ],
+      "sources": [
+        { "label": "Official Solin site" },
+        { "label": "Solin features" },
+        { "label": "Solin changelog" },
+        { "label": "About Solin" },
+        { "label": "Solin privacy" },
+        { "label": "Solin terms" }
+      ]
+    },
+    "meeting-media-manager": {
+      "description": "Open-source cross-platform app for downloading, organizing, and presenting meeting media, with Zoom/OBS support, background music, watched folders, JWPUB/JWLPLAYLIST, multiple profiles, and extensive documentation.",
+      "details": [
+        "The documentation describes M3 as a comprehensive app for Windows, macOS, and Linux that downloads, organizes, and presents pictures and videos for meetings in any language available on the official website.",
+        "The repository is public, licensed AGPL-3.0-or-later, and the README lists automatic downloads, presentation tools, Zoom, OBS, multiple congregations, playlists, JWPUB, Bible audio, public talks, and external media import.",
+        "The FAQ lists support for Windows 10+, macOS 10.15+, and Linux AppImage, with minimum requirements of 4 GB RAM and 6 GB free disk space, recommending 8 GB and 15 GB for cache.",
+        "The documentation says meeting data is stored locally on the computer, media is downloaded directly from the official website, and the code is available for review.",
+        "The app uses Sentry in the Electron process to capture exceptions and crashes; the FAQ says limited data may be collected for bug reporting.",
+        "The code initializes Sentry with a public DSN, release/environment, and tracesSampleRate 1; GPU, renderer, and video-capture failures can generate events with technical details.",
+        "Presentation includes media controls, shortcuts, custom timing, pan/zoom for images and videos, an external media window, monitor detection, and website presentation for trusted sites.",
+        "In practical use reviewed here, M3 concentrates control in the presentation flow; pan/zoom is performed through thumbnails/controls, without the same direct preview and separate send/reset workflow as Solin.",
+        "The website feature opens a separate window for trusted sites; the code limits JW domains to jw.org, jwevent.org, and stream.jw.org, with trusted CDNs for content.",
+        "The recent changelog shows very active maintenance: JW Stream added to mirrorable sites, meeting timer, Memorial media out of beta, automatic meeting schedule sync, security hardening, media fixes, watch folders, and frequent dependency updates.",
+        "The FAQ says donations are not accepted and never will be, in harmony with the idea of providing freely.",
+        "In a Windows installation observed during this review, the installed app occupied about 568 MB; this number is contextual and may vary by version, platform, and local cache."
+      ],
+      "pros": [
+        "AGPL open source, allowing real auditability of the app's behavior.",
+        "Supports Windows, macOS, and Linux.",
+        "Longer, mature history with an active repository, broad documentation, and community.",
+        "Automatic background music is well documented, with stopping before the meeting and one-click restart.",
+        "Documentation covers requirements, limitations, setup, FAQ, contribution, and troubleshooting.",
+        "Auto-export and watched-folder workflows are well documented for backup and home-to-Kingdom Hall work."
+      ],
+      "cons": [
+        "Limited bug/error data collection through Sentry, according to the FAQ and code.",
+        "During projection, the workflow is less free for navigating to other areas of the app.",
+        "Because it brings together many modules and options, initial setup may require more care for less experienced operators.",
+        "Practical pan/zoom depends on thumbnails/controls, not direct visual pre-adjustment on the projected media.",
+        "Website presentation is more restricted and opens in a separate window, not as an in-app tabbed browser."
+      ],
+      "sources": [
+        { "label": "M3 documentation" },
+        { "label": "About M3" },
+        { "label": "M3 user guide" },
+        { "label": "M3 FAQ" },
+        { "label": "GitHub repository" },
+        { "label": "M3 changelog" },
+        { "label": "M3 Sentry code" },
+        { "label": "M3 trusted domains" }
+      ]
+    },
     "nw-scheduler": {
       "description": "Desktop software for Windows and macOS, with the NW Publisher companion app for publishers. It covers Life and Ministry, public talks, field service, carts, duties, territories, secretary workflows, and other congregation workflows.",
       "details": [
