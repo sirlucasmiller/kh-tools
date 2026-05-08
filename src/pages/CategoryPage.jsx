@@ -40,6 +40,7 @@ export default function CategoryPage() {
         title={categoryName}
         description={seoDescription}
         path={`/category/${category.id}`}
+        noindex={!hasApps}
       />
       <Link to={homePath} className="category-page__back">
         ← {t('category.backToHome')}
