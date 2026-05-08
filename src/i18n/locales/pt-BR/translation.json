@@ -58,7 +58,7 @@
     "verdictSummary": "Nossa recomendação",
     "verdictTie": "Empate contextual",
     "evidenceTitle": "Detalhes da análise",
-    "evidenceSubtitle": "Notas verificadas nas páginas oficiais, políticas e lojas de apps.",
+    "evidenceSubtitle": "Notas verificadas em páginas oficiais, políticas, código-fonte e testes práticos quando disponíveis.",
     "sources": "Fontes"
   },
   "about": {
@@ -145,7 +145,7 @@
   },
   "verdicts": {
     "audio-video": {
-      "summary": "Recomendação prática: Solin leva vantagem para uso direto na reunião por combinar operação ao vivo mais fluida, app responsivo durante a projeção, zoom/pan preparado, navegador integrado com abas, integração nativa com Zoom, contagem de assistência, curva de aprendizado mais suave e política de privacidade com coleta mínima declarada. Meeting Media Manager continua sendo uma solução forte, especialmente por ser open-source, oferecer Linux, ter documentação ampla, música de fundo automática e histórico público maior; além disso, o Solin ainda é um projeto recente, com primeiro changelog público em 19 de março de 2026. Ainda assim, na comparação específica de uso prático em áudio/vídeo, o Solin aparece como a escolha mais forte."
+      "summary": "Recomendação prática: Solin leva vantagem para uso direto na reunião por combinar operação ao vivo mais fluida, app responsivo durante a projeção, zoom/pan preparado, navegador integrado com abas, integração nativa com Zoom, contagem de assistência, curva de aprendizado mais suave e privacidade prática mais favorável. Meeting Media Manager continua sendo uma solução forte, especialmente por ser open-source, oferecer Linux, ter documentação ampla, música de fundo automática e histórico público maior; além disso, o Solin ainda é um projeto recente, com primeiro changelog público em 19 de março de 2026. Ainda assim, na comparação específica de uso prático em áudio/vídeo, o Solin aparece como a escolha mais forte."
     },
     "meeting-scheduling": {
       "summary": "Empate contextual: Hourglass é a opção mais acessível para uma congregação que quer começar rápido, com uso via navegador, apps móveis, notificações e custo baseado em donativos. NW Scheduler é a escolha mais prudente quando a prioridade é manter o núcleo administrativo em desktop/local, com menor dependência de nuvem e compartilhamento documentado com criptografia ponta a ponta. Como os dois cobrem bem agenda e designações, a decisão depende principalmente do peso dado a conveniência colaborativa versus controle local dos dados."
@@ -164,6 +164,7 @@
         "O changelog recente adicionou suporte nativo a macOS, múltiplos perfis, playlists com seções/colorização, pastas vinculadas, integração com Zoom Meetings, integração com OBS, toolbar overlay e cálculo/mídia da Celebração.",
         "A página Sobre informa que os instaladores principais são para Windows 10+ e macOS 13+, mas há um instalador legado para Windows 8/8.1; essa versão é descrita como adaptação do app atual, podendo ser mais lenta ou instável e sem suporte para versões mais novas.",
         "A política de privacidade afirma que o app não coleta dados pessoais, estatísticas de uso, relatórios de erro ou telemetria; ele faz chamadas GET para checagem de versão com UUID anônimo e notificações globais.",
+        "No teste prático analisado, esse comportamento declarado foi compatível com o tráfego observado: não foram identificadas requisições de telemetria, analytics ou relatórios de erro do Solin.",
         "O site informa que não exige conta nem assinatura; os termos informam que o Solin é gratuito, não tem recursos pagos, é fornecido como está e não é afiliado nem endossado por qualquer organização oficial.",
         "A página Sobre afirma que o Solin é gratuito e que isso não mudará; nenhuma página de doação foi identificada no site oficial durante esta análise.",
         "Em uma instalação Windows observada nesta análise, o app instalado ocupava aproximadamente 176 MB; esse número é contextual e pode variar por versão, plataforma e cache local.",
@@ -174,7 +175,7 @@
         "Zoom/pan direto e preparável antes de enviar para o projetor.",
         "Navegador integrado com abas e projeção ao vivo de aba específica.",
         "Integração nativa com Zoom, incluindo recursos de reunião e contagem de assistência documentados no changelog.",
-        "Política de privacidade explícita: sem dados pessoais, telemetria ou relatórios de erro.",
+        "Política de privacidade explícita e compatível com o tráfego prático observado: sem dados pessoais, telemetria ou relatórios de erro.",
         "Curva de aprendizado mais suave para operadores que precisam adotar o app rapidamente.",
         "Instalação observada consideravelmente menor que a do M3 no Windows analisado.",
         "Envio local por QR/Wi-Fi sem conta ou nuvem."
@@ -201,8 +202,9 @@
         "O repositório é público, tem licença AGPL-3.0-or-later e o README lista download automático, ferramentas de apresentação, Zoom, OBS, múltiplas congregações, playlists, JWPUB, áudio da Bíblia, discursos públicos e importação de mídia externa.",
         "O FAQ informa suporte a Windows 10+, macOS 10.15+ e AppImage para Linux, com requisitos mínimos de 4 GB de RAM e 6 GB livres, recomendando 8 GB e 15 GB para cache.",
         "A documentação afirma que os dados da reunião ficam localmente no computador, as mídias são baixadas diretamente do site oficial e o código pode ser revisado.",
-        "O app usa Sentry no processo Electron para capturar exceções e falhas; o FAQ diz que dados limitados podem ser coletados para relatórios de bug.",
-        "O código inicializa Sentry com DSN público, release/ambiente e tracesSampleRate 1; falhas de GPU, renderer e captura de vídeo podem gerar eventos com detalhes técnicos.",
+        "O app usa Sentry no processo Electron para capturar exceções e falhas; o FAQ descreve isso como coleta limitada para relatórios de bug.",
+        "O código também inicializa Sentry no renderer com integração de sessão e tracing de navegador/rotas, usando tracesSampleRate 1; isso habilita eventos de performance, navegação e interação além de erros.",
+        "Em tráfego real analisado em 8 de maio de 2026, o payload enviado ao Sentry incluía transações de navegação dentro do app, timestamps e duração de transações, spans de requisições HTTP, breadcrumbs de stores/console, URL local file:// com caminho que pode revelar o nome de usuário do Windows, User-Agent, locale/timezone e sinais de hardware como memória do dispositivo e quantidade de núcleos.",
         "A apresentação inclui controles de mídia, atalhos, temporização personalizada, zoom/pan em imagens e vídeos, janela externa de mídia, reconhecimento de monitores e modo de apresentação de sites permitidos.",
         "Na operação prática analisada, o M3 concentra o controle no fluxo de apresentação; zoom/pan é feito pela miniatura/controles, sem a mesma pré-visualização direta e envio separado do Solin.",
         "O recurso de site abre uma janela externa para sites confiáveis; o código limita domínios JW a jw.org, jwevent.org e stream.jw.org, com CDNs confiáveis para conteúdo.",
@@ -219,7 +221,7 @@
         "Fluxos de auto-exportação e pastas monitoradas são bem documentados para backup e trabalho entre casa e Salão do Reino."
       ],
       "cons": [
-        "Coleta limitada de dados para bugs/erros via Sentry, conforme FAQ e código.",
+        "Telemetria prática via Sentry é mais ampla do que a descrição de coleta limitada para bugs sugere.",
         "Durante a projeção, o fluxo é menos livre para navegar por outras áreas do app.",
         "Por reunir muitos módulos e opções, pode exigir mais cuidado na configuração inicial para operadores menos experientes.",
         "Zoom/pan prático depende da miniatura/controles, não de pré-ajuste visual direto na mídia projetada.",
@@ -232,7 +234,8 @@
         { "label": "FAQ do M3" },
         { "label": "Repositório GitHub" },
         { "label": "Changelog do M3" },
-        { "label": "Código de Sentry do M3" },
+        { "label": "Código Sentry Electron do M3" },
+        { "label": "Código Sentry renderer do M3" },
         { "label": "Domínios confiáveis do M3" }
       ]
     },

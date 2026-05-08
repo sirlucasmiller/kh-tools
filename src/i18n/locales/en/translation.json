@@ -58,7 +58,7 @@
     "verdictSummary": "Our recommendation",
     "verdictTie": "Context-dependent tie",
     "evidenceTitle": "Review Details",
-    "evidenceSubtitle": "Notes verified against official pages, policies, and app stores.",
+    "evidenceSubtitle": "Notes verified against official pages, policies, source code, and practical tests where available.",
     "sources": "Sources"
   },
   "about": {
@@ -145,7 +145,7 @@
   },
   "verdicts": {
     "audio-video": {
-      "summary": "Practical recommendation: Solin has the edge for direct meeting use because it combines a more fluid live workflow, an app that remains responsive during projection, prepared pan/zoom, an integrated tabbed browser, native Zoom integration, attendance counting, a gentler learning curve, and a privacy policy that declares minimal data collection. Meeting Media Manager remains a strong solution, especially because it is open source, supports Linux, has broad documentation, automatic background music, and a longer public history; Solin is also still a recent project, with its first public changelog entry on March 19, 2026. Even so, in this specific audio/video practical-use comparison, Solin appears to be the stronger choice."
+      "summary": "Practical recommendation: Solin has the edge for direct meeting use because it combines a more fluid live workflow, an app that remains responsive during projection, prepared pan/zoom, an integrated tabbed browser, native Zoom integration, attendance counting, a gentler learning curve, and stronger practical privacy. Meeting Media Manager remains a strong solution, especially because it is open source, supports Linux, has broad documentation, automatic background music, and a longer public history; Solin is also still a recent project, with its first public changelog entry on March 19, 2026. Even so, in this specific audio/video practical-use comparison, Solin appears to be the stronger choice."
     },
     "meeting-scheduling": {
       "summary": "Context-dependent tie: Hourglass is the more accessible option for a congregation that wants to get started quickly, with browser-based use, mobile apps, notifications, and donation-based cost. NW Scheduler is the more cautious choice when the priority is keeping the administrative core desktop/local, with less cloud dependency and documented end-to-end encrypted sharing. Since both cover scheduling and assignments well, the decision mainly depends on how much weight you give to collaborative convenience versus local data control."
@@ -164,6 +164,7 @@
         "Recent changelog entries added native macOS support, multiple profiles, playlist sections/colors, linked folders, Zoom Meetings integration, OBS integration, overlay toolbar, and Memorial calculation/media.",
         "The About page says the main installers target Windows 10+ and macOS 13+, but there is a legacy installer for Windows 8/8.1; that version is described as an adaptation of the current app, may be slower or unstable, and will not receive support for newer Solin versions.",
         "The privacy policy says the app collects no personal data, usage statistics, error reports, or telemetry; it makes GET calls for version checks with an anonymous UUID and for global notifications.",
+        "In the practical test reviewed here, that stated behavior matched the observed traffic: no Solin telemetry, analytics, or error-reporting requests were identified.",
         "The site says no account or subscription is required; the terms say Solin is free, has no paid features, is provided as-is, and is not affiliated with or endorsed by any official organization.",
         "The About page says Solin is free and that this will not change; no donation page was identified on the official site during this review.",
         "In a Windows installation observed during this review, the installed app occupied about 176 MB; this number is contextual and may vary by version, platform, and local cache.",
@@ -174,7 +175,7 @@
         "Direct pan/zoom that can be prepared before sending to the projector.",
         "Integrated tabbed browser with live projection of a specific tab.",
         "Native Zoom integration, including meeting features and attendance counting documented in the changelog.",
-        "Explicit privacy policy: no personal data, telemetry, or error reports.",
+        "Explicit privacy policy that matches the observed practical traffic: no personal data, telemetry, or error reports.",
         "Gentler learning curve for operators who need to adopt the app quickly.",
         "Observed installation is considerably smaller than M3 on the Windows system reviewed.",
         "Local QR/Wi-Fi transfer without an account or cloud."
@@ -201,8 +202,9 @@
         "The repository is public, licensed AGPL-3.0-or-later, and the README lists automatic downloads, presentation tools, Zoom, OBS, multiple congregations, playlists, JWPUB, Bible audio, public talks, and external media import.",
         "The FAQ lists support for Windows 10+, macOS 10.15+, and Linux AppImage, with minimum requirements of 4 GB RAM and 6 GB free disk space, recommending 8 GB and 15 GB for cache.",
         "The documentation says meeting data is stored locally on the computer, media is downloaded directly from the official website, and the code is available for review.",
-        "The app uses Sentry in the Electron process to capture exceptions and crashes; the FAQ says limited data may be collected for bug reporting.",
-        "The code initializes Sentry with a public DSN, release/environment, and tracesSampleRate 1; GPU, renderer, and video-capture failures can generate events with technical details.",
+        "The app uses Sentry in the Electron process to capture exceptions and crashes; the FAQ describes this as limited collection for bug reporting.",
+        "The code also initializes Sentry in the renderer with session integration and browser/router tracing, using tracesSampleRate 1; this enables performance, navigation, and interaction events beyond errors.",
+        "In real traffic analyzed on May 8, 2026, the payload sent to Sentry included in-app navigation transactions, timestamps and transaction durations, HTTP request spans, store/console breadcrumbs, a local file:// URL with a path that can reveal the Windows username, User-Agent, locale/timezone, and hardware signals such as device memory and CPU core count.",
         "Presentation includes media controls, shortcuts, custom timing, pan/zoom for images and videos, an external media window, monitor detection, and website presentation for trusted sites.",
         "In practical use reviewed here, M3 concentrates control in the presentation flow; pan/zoom is performed through thumbnails/controls, without the same direct preview and separate send/reset workflow as Solin.",
         "The website feature opens a separate window for trusted sites; the code limits JW domains to jw.org, jwevent.org, and stream.jw.org, with trusted CDNs for content.",
@@ -219,7 +221,7 @@
         "Auto-export and watched-folder workflows are well documented for backup and home-to-Kingdom Hall work."
       ],
       "cons": [
-        "Limited bug/error data collection through Sentry, according to the FAQ and code.",
+        "Practical Sentry telemetry is broader than the limited bug-reporting description suggests.",
         "During projection, the workflow is less free for navigating to other areas of the app.",
         "Because it brings together many modules and options, initial setup may require more care for less experienced operators.",
         "Practical pan/zoom depends on thumbnails/controls, not direct visual pre-adjustment on the projected media.",
@@ -232,7 +234,8 @@
         { "label": "M3 FAQ" },
         { "label": "GitHub repository" },
         { "label": "M3 changelog" },
-        { "label": "M3 Sentry code" },
+        { "label": "M3 Electron Sentry code" },
+        { "label": "M3 renderer Sentry code" },
         { "label": "M3 trusted domains" }
       ]
     },
