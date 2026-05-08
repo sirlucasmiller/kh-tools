@@ -1,10 +1,16 @@
 import { useTranslation } from 'react-i18next'
+import Seo from '../components/common/Seo'
 
 export default function AboutPage() {
   const { t } = useTranslation()
 
   return (
     <div className="page container" id="about-page">
+      <Seo
+        title={t('seo.about.title')}
+        description={t('seo.about.description')}
+        path="/about"
+      />
       <div className="about">
         <h1 className="category-page__title" style={{ marginBottom: 'var(--space-10)' }}>
           {t('about.title')}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useLocalizedPath } from '../i18n/useLocalizedPath'
+import Seo from '../components/common/Seo'
 
 export default function NotFoundPage() {
   const { t } = useTranslation()
@@ -8,6 +9,11 @@ export default function NotFoundPage() {
 
   return (
     <div className="page container" id="not-found-page">
+      <Seo
+        title={t('notFound.title')}
+        description={t('notFound.description')}
+        noindex
+      />
       <div className="not-found">
         <div className="not-found__code">404</div>
         <h1 className="not-found__title">{t('notFound.title')}</h1>

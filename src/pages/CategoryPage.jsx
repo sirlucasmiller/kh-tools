@@ -10,6 +10,7 @@ import Verdict from '../components/category/Verdict'
 import EmptyState from '../components/common/EmptyState'
 import NotFoundPage from './NotFoundPage'
 import { useLocalizedPath } from '../i18n/useLocalizedPath'
+import Seo from '../components/common/Seo'
 
 export default function CategoryPage() {
   const { categoryId } = useParams()
@@ -23,9 +24,23 @@ export default function CategoryPage() {
   }
 
   const hasApps = category.apps.length > 0
+  const categoryName = t(`categoryNames.${category.id}`, category.id)
+  const appNames = category.apps.map((app) => app.name).join(', ')
+  const seoDescription = hasApps
+    ? t('seo.category.description', {
+        appNames,
+        categoryName,
+        count: category.apps.length,
+      })
+    : t('seo.category.emptyDescription', { categoryName })
 
   return (
     <div className="page container" id="category-page">
+      <Seo
+        title={categoryName}
+        description={seoDescription}
+        path={`/category/${category.id}`}
+      />
       <Link to={homePath} className="category-page__back">
         ← {t('category.backToHome')}
       </Link>
@@ -33,7 +48,7 @@ export default function CategoryPage() {
       <header className="category-page__header">
         <div className="category-page__icon">{category.icon}</div>
         <h1 className="category-page__title">
-          {t(`categoryNames.${category.id}`, category.id)}
+          {categoryName}
         </h1>
         {hasApps && (
           <p className="category-page__description">

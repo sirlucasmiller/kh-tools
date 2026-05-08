@@ -2,6 +2,20 @@
   "meta": {
     "languageName": "Português (Brasil)"
   },
+  "seo": {
+    "home": {
+      "title": "KH Tools",
+      "description": "Compare aplicativos independentes para congregações das Testemunhas de Jeová, com recursos, privacidade, prós, contras e vereditos em português."
+    },
+    "category": {
+      "description": "Compare {{count}} apps de {{categoryName}} para congregações: {{appNames}}. Veja recursos, privacidade, prós, contras e recomendação.",
+      "emptyDescription": "Veja a categoria {{categoryName}} no KH Tools. Esta comparação ainda não tem apps avaliados, mas aceitará sugestões da comunidade."
+    },
+    "about": {
+      "title": "Sobre o projeto",
+      "description": "Entenda como o KH Tools reúne e compara apps independentes para congregações, com foco em informações práticas, privacidade e escolha local."
+    }
+  },
   "header": {
     "home": "Início",
     "about": "Sobre",

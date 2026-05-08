@@ -2,6 +2,20 @@
   "meta": {
     "languageName": "English"
   },
+  "seo": {
+    "home": {
+      "title": "KH Tools",
+      "description": "Compare independent congregation apps for Jehovah's Witnesses, including features, privacy notes, pros, cons, and verdicts in English."
+    },
+    "category": {
+      "description": "Compare {{count}} {{categoryName}} apps for congregations: {{appNames}}. Review features, privacy, pros, cons, and our recommendation.",
+      "emptyDescription": "View the {{categoryName}} category on KH Tools. This comparison has no reviewed apps yet, but community suggestions are welcome."
+    },
+    "about": {
+      "title": "About the project",
+      "description": "Learn how KH Tools gathers and compares independent congregation apps with practical details, privacy notes, and local choice in mind."
+    }
+  },
   "header": {
     "home": "Home",
     "about": "About",
@@ -95,7 +109,7 @@
   "categoryFeatures": {
     "audio-video": {
       "autoWeeklyMedia": "Automatic weekly media download",
-      "songsAndClips": "Songs and music videos",
+      "songsAndClips": "Songs and original songs",
       "customPlaylists": "Playlists and custom media",
       "jwpubPlaylistImport": "JWPUB/JWLPLAYLIST import",
       "pdfSupport": "PDFs and presentations",
