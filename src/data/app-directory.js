@@ -29,7 +29,7 @@ const directoryEntries = [
   {
     id: 'meeting-schedule-assistant',
     name: 'Meeting Schedule Assistant',
-    iconSrc: '/app-icons/msa.ico',
+    iconSrc: '/app-icons/msa.png',
     developer: 'Public Talk Software',
     website: 'https://www.publictalksoftware.co.uk/meeting-schedule-assistant/',
     repository: null,
